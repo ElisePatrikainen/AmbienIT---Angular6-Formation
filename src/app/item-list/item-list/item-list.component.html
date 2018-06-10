@@ -1,0 +1,29 @@
+<mat-drawer-container>
+
+  <mat-drawer mode="side" opened="true">
+    <!-- A remplacer par ce composant + inclusion d'un Subject
+      <app-item-selection></app-item-selection>
+      -->
+
+      <app-item-selection category="viewedItems" [selectedItems]="viewedItems"></app-item-selection>
+      <app-item-selection category="toBuyItems" [selectedItems]="toBuyItems"></app-item-selection>
+        
+
+
+    <div>
+      <h2>Filtres :</h2>
+      <ul>
+        <li *ngFor="let filter of itemList">{{filter.name}}</li>
+      </ul>
+    </div>
+  </mat-drawer>
+
+  <mat-drawer-content>
+    <mat-grid-list cols="3" rowHeight="650px">
+      <mat-grid-tile *ngFor="let item of itemList; let i = index" [colspan]="1" [rowspan]="1" [style.background]="grey">
+        <app-item-details [item]="item" [index]="i" (itemSelected)="updateSelectedList($event)"></app-item-details>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </mat-drawer-content>
+
+</mat-drawer-container>

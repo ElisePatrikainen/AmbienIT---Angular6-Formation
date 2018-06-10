@@ -1,0 +1,10 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <mat-menu #menu1="matMenu">
+      <span mat-menu-item>Row 1</span>
+      <span mat-menu-item>Row 2</span>
+      <span mat-menu-item>Row 3</span>
+    </mat-menu>
+    <button mat-button [matMenuTriggerFor]="menu1">Test menu</button>
+  </mat-toolbar-row>
+</mat-toolbar>

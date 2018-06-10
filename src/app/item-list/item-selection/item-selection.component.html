@@ -1,0 +1,15 @@
+<mat-card class="itemList">
+    <mat-card-header>
+      <mat-card-title>{{category === "toBuyItems" ? "Panier" : "Consultés"}}</mat-card-title>
+      <mat-card-subtitle>Vos recherches récentes</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      {{selectedItems}}
+        <ul>
+            <li *ngFor="let item of items">
+              <img [src]="item.imageUrl">
+              <span>{{item.name}} | {{item.domaine}}</span>
+            </li>
+          </ul>
+    </mat-card-content>
+  </mat-card>

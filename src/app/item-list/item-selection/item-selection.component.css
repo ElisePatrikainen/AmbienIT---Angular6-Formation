@@ -1,0 +1,44 @@
+mat-card {
+    padding: 0;
+    margin: 30px 15px;
+}
+
+
+mat-card-header,
+mat-card-content {
+    padding: 15px;
+}
+
+mat-card-header {
+    padding: 15px;
+    background-color: grey;
+    color: white;
+    font-family: fantasy;
+    letter-spacing: 2px;
+}
+
+mat-card-title,
+mat-card-subtitle {
+    margin: 0;
+}
+
+mat-card-title {
+    margin-bottom: 15px;
+}
+
+mat-card-subtitle {
+    font-family: sans-serif;
+    letter-spacing: 0;
+    color: white;
+    opacity: 0.7;
+}
+
+.itemList ul {
+    list-style: none;
+    padding: 0;
+}
+
+.itemList ul img {
+    height: 20px;
+    margin-right: 8px;
+}

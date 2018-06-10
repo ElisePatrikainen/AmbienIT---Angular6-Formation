@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+
+/* On-scroll fade-in directive */
+
+.unvisible {
+    opacity: 0;
+}
+
+.fadeIn{
+    animation: fadingIn 100ms ease-in-out forwards;
+}
+
+@keyframes fadingIn {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}

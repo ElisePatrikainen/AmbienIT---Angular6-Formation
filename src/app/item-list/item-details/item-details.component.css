@@ -60,15 +60,16 @@ mat-card-actions {
 .mat-stroked-button,
 .mat-flat-button {
     width: 103px;
-    border: 2px solid #673ab7;
+    border: 2px solid #781e28;
     font-family: fantasy;
 }
 
 .mat-card-title {
     font-size: 20px;
-    color: #2c1652;
+    font-weight: bold;
 }
 
-.test2 {
-    color: blue;
+
+.mat-flat-button.mat-primary, .mat-mini-fab.mat-primary, .mat-raised-button.mat-primary {
+    background-color: #781e28;
 }

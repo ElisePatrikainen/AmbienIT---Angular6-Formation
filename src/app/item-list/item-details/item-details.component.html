@@ -12,7 +12,10 @@
   </mat-card-content>
   <mat-card-actions class="fullWidth">
     <div class="mat-card-customContainer">
+      <!-- Router Link
       <button mat-stroked-button [routerLink]="['detail', item.name]" (click)="addToSelectedItems('view')">VOIR</button>
+      -->
+      <button mat-stroked-button (click)="addToSelectedItems('view')">VOIR</button>
       <button mat-flat-button (click)="addToSelectedItems('buy')">ACHETER</button>
     </div>
   </mat-card-actions>

@@ -1,6 +1,7 @@
 mat-card {
     padding: 0;
     margin: 30px 15px;
+    border: 1px solid #781e28;
 }
 
 
@@ -11,10 +12,10 @@ mat-card-content {
 
 mat-card-header {
     padding: 15px;
-    background-color: grey;
-    color: white;
+    color: #781e28;
     font-family: fantasy;
     letter-spacing: 2px;
+    border: 2px solid #781e28;
 }
 
 mat-card-title,
@@ -29,8 +30,7 @@ mat-card-title {
 mat-card-subtitle {
     font-family: sans-serif;
     letter-spacing: 0;
-    color: white;
-    opacity: 0.7;
+    color: #781e28;
 }
 
 .itemList ul {

@@ -3,6 +3,8 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { WineItem } from './../../assets/wineItem.model';
 import { ISelectEvent } from './../item-list/item-list.component';
 
+import { TestService } from './../../test.service';
+
 @Component({
   selector: 'app-item-details',
   templateUrl: './item-details.component.html',
@@ -14,7 +16,7 @@ export class ItemDetailsComponent implements OnInit {
   @Input('index') itemIndex: number;
   @Output('itemSelected') itemSel: EventEmitter<any>;
 
-  constructor() {
+  constructor( private serv: TestService ) {
     this.itemSel = new EventEmitter<ISelectEvent>()
   }
 
@@ -27,6 +29,7 @@ export class ItemDetailsComponent implements OnInit {
       toAdd: true,
       item: this.item
     })
+    this.serv.test1(this.item.name)
   }
 
 }

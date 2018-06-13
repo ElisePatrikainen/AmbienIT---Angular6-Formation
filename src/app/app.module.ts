@@ -27,6 +27,7 @@ import { ItemDetailPageComponent } from './item-detail-page/item-detail-page.com
 import { HoverEffectDirective } from './directives/hover-effect.directive';
 import { OnScrollFadeInDirective } from './directives/on-scroll-fade-in.directive';
 import { MultiLinesEllipsisPipe } from './multi-lines-ellipsis.pipe';
+import { TestObservableComponent } from './test-observable/test-observable.component';
 
 const routes: Routes = [
   { path: 'detail/:name', component: ItemDetailPageComponent },
@@ -45,7 +46,8 @@ const routes: Routes = [
     ItemDetailsComponent,
     HoverEffectDirective,
     OnScrollFadeInDirective,
-    MultiLinesEllipsisPipe
+    MultiLinesEllipsisPipe,
+    TestObservableComponent
   ],
   imports: [
     BrowserModule,
